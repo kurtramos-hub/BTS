@@ -1,6 +1,6 @@
 let balance = 1000;
 
-// Step 1: checkBalance
+
 function checkBalance(amount) {
   return new Promise((resolve, reject) => {
     console.log("Checking balance...");
@@ -14,7 +14,7 @@ function checkBalance(amount) {
   });
 }
 
-// Step 2: deductAmount
+
 function deductAmount(amount) {
   return new Promise((resolve, reject) => {
     console.log("Deducting amount...");
@@ -30,18 +30,18 @@ function deductAmount(amount) {
   });
 }
 
-// Step 3: confirmTransaction
+
 function confirmTransaction() {
   return new Promise((resolve, reject) => {
     console.log("Confirming transaction...");
     setTimeout(() => {
-      // Simulate success confirmation
+      
       resolve("Transaction complete");
     }, 500);
   });
 }
 
-// Putting it all together
+
 function transferMoney(amount) {
   checkBalance(amount)
     .then(msg => {
@@ -60,5 +60,5 @@ function transferMoney(amount) {
     });
 }
 
-// Example call
+
 transferMoney(300);
